@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="en-za">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us | Diagtech Auto</title>
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Bootstrap library -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <!-- Google fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+        <!-- google maps -->
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+        <script src="js/maps.js"></script>
+        <!-- swiper css -->
+        <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+        <!-- fontawesome icons -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/fontawesome.min.css" integrity="sha512-r9kUVFtJ0e+8WIL8sjTUlHGbTLwlOClXhVqGgu4sb7ILdkBvM2uI+n/Fz3FN8u3VqJX7l9HLiXqXxkx2mZpkvQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/brands.min.css" integrity="sha512-rQgMaFKZKIoTKfYInSVMH1dSM68mmPYshaohG8pK17b+guRbSiMl9dDbd3Sd96voXZeGerRIFFr2ewIiusEUgg==" crossorigin="anonymous" referrerpolicy="no-referrer" /></head>
+<body>
+<div class="menu-container" id="slide-in">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="menu-container-header d-flex align-items-center justify-content-between">
+                    <div class="menu-container-header-logo">
+                        <img src="images/logo/diagtech&#32;logo.png" alt="" class="img-fluid">
+                    </div>
+                    <div class="menu-container-right-close d-flex align-items-center" id="close-menu">
+                        <div class="menu-text pe-1">
+                            Close Menu
+                        </div>
+                        <div class="close-menu">
+                            <div class="close-menu-line"></div>
+                            <div class="close-menu-line"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu-container-body">
+                    <ul class="m-0 p-0">
+                        <li><a href="index.html" class="link menu-container-links">Home</a></li>
+                        <li><a href="about.html" class="link menu-container-links">About Us</a></li>
+                        <li><a href="services.html" class="link menu-container-links">Services</a></li>
+                        <li><a href="contact.html" class="link menu-container-links">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>    <header>
+        <div class="container-fluid full-width">
+            <div class="d-flex row no-gutter">
+                <!-- left top header -->
+                <div class="left-header-items column-6">
+                    <div class="logo-panel d-flex justify-content-center align-content-center">
+                        <div class="logo">
+                            <a href="index.html" class="link" title="Home">
+                                <img src="images/logo/diagtech&#32;logo.png" alt="Diagtech Auto Logo" class="img-fluid logo-img">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- right top header -->
+                <div class="right-header-items d-none">
+                    <div class="top-layer d-flex justify-content-end">
+                        <div class="ribbon pe-5 ps-5 p-2">
+                            <div class="social-icons d-flex justify-content-end align-items-center">
+                                <ul class="d-flex m-0 p-0">
+                                    <li>
+                                        <a href="about" class="link social-link" title="Follow us">
+                                            <i class="fab fa-facebook-f"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="about" class="link social-link" title="Chat with us">
+                                            <i class="fab fa-whatsapp"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="about" class="link social-link" title="E-mail us">
+                                            <i class="fa fa-envelope"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bottom-header-items d-flex justify-content-between align-items-center">
+                        <div class="bottom-layer d-flex justify-content-between">
+                            <div class="list-items d-flex align-content-end">
+                                <ul class="d-flex align-content-center justify-content-around m-0 p-0">
+                                    <li><a href="index.html" class="link " title="Home">Home</a></li>
+                                    <li><a href="about.html" class="link active" title="About Us">About Us</a></li>
+                                    <li><a href="services.html" class="link " title="Services">Services</a></li>
+                                    <li><a href="contact.html" class="link " title="Contact">Contact</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="contact-panel d-flex justify-content-center align-items-center">
+                            <span class="icon phone ps-3 pe-3"><i class="fa fa-phone"></i></span>
+                            <ul class="pe-3 ps-3 m-0">
+                                <li><a href="tel:+27 61 450 6547" class="link phone" title="Call">+27 61 450 6547</a></li>
+                                <li><a href="tel:+27 66 205 3473" class="link phone" title="Call">+27 66 205 3473</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 d-flex d-sm-none align-items-center justify-content-end">
+                    <div class="menu" id="open-menu">
+                        <div class="menu-line"></div>
+                        <div class="menu-line"></div>
+                        <div class="menu-line"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header><section class="hero aboout">
+    <div class="container full-height">
+        <div class="row full-height">
+            <div class="hero-bg-main d-flex align-items-center">
+                <div class="text-wrap">
+                    <h1 class="hero-text text-white">Commited to<br>
+                        <span class="text-capitalize text-uppercase">
+                            <strong class="text-danger">quality</strong>
+                            <strong>service</strong>
+                        </span>
+                    </h1>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<div class="overlayer-3">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-4 block">
+                <div class="block-inner d-flex text-white">
+                    <div class="block-icon">
+                        <img src="images/icons/icons8-time-64.png" alt="">
+                    </div>
+                    <div class="block-info">
+                        <h5 class="block-title">Times</h5>
+                        <ul>
+                            <li>
+                                <span class="block-title-info">Mon - Fri:</span>
+                                <span class="block-title-time">8am - 5pm</span>
+                            </li>
+                            <li>
+                                <span class="block-title-info">Sat:</span>
+                                <span class="block-title-time">8am - 1pm</span>
+                            </li>
+                            <li>
+                                <span class="block-title-info">Sun:</span>
+                                <span class="block-title-time">Closed</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4 block">
+                <div class="block-inner d-flex text-white">
+                    <div class="block-icon">
+                        <img src="images/icons/document.png" width="60px" alt="">
+                    </div>
+                    <div class="block-info">
+                        <h5 class="block-title">Get a Quote</h5>
+                        <p class="block-title-text">Allow us to send you a detailed quote for your vehicle</p>
+                        <a href="contact.html" class="link block-title-quote-btn red-bg">Get a Quote</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4 block">
+                <div class="block-inner d-flex text-white">
+                    <div class="block-icon">
+                        <img src="images/icons/calendar.png" width="60px" alt="">
+                    </div>
+                    <div class="block-info">
+                        <h5 class="block-title">Book a Services</h5>
+                        <p class="block-title-text">We are commited to give you the best service.</p>
+                        <a href="contact.html" class="link block-title-quote-btn bg-dark">Book Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div><main>
+<section class="site-info">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="h2-title text-center">
+                    <h4 class="title text-uppercase"><strong>Diagtech</strong> <span class="small-weight">auto</span></h4>
+                    <div class="liner d-flex justify-content-center align-items-center">
+                        <div class="d-flex liner-inner align-items-center">
+                            <div class="line-left"></div>
+                            <div class="block">
+                                <div class="square"></div>
+                            </div>
+                            <div class="line-right"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 pb-4 pb-sm-0">
+                <div class="image-container">
+                    <div class="square"></div>
+                    <div class="img-container">
+                        <img src="images/body/about-us_image.jpg" alt="Diagtech Auto Service Image" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 pt-4 pt-sm-0">
+                <div class="site-info-paragraph">
+                    <div class="step pb-2">
+                        <p>Diagtech Auto is a company that was established by Henry Mmola, who is a qualified
+                            technician since 2007, he had a dream of starting up an auto maintenance company which
+                            would offer a better quality services to every client and affordable rates.
+                        </p>
+                    </div>
+                    <div class="step pb-2">
+                        <p>We at Diagtech Auto understand that people are always looking for an honest, affordable
+                            and clean auto repair facility which is committed to customer services and reliability.
+                        </p>
+                    </div>
+                    <div class="step pb-2">
+                        <p>We are aware of our environment, therefore we do our best to keep our client's vehicles
+                            healthy to help control the emisisons
+                        </p>
+                    </div>
+                    <div class="step pb-2">
+                        <div class="h2-title pt-2 pb-2">
+                            <h4 class="title text-uppercase"><strong>Key to</strong> <span class="small-weight">success</span></h4>
+                        </div>
+                        <div class="info paragraph">
+                            <p>In auto maintenance industry a business builds its client base one customer at a time
+                                and mostly through word of mouth markeking, with this in-mind, the keys to our success 
+                                are these:
+                            </p>
+                            <ul class="m-0 p-0">
+                                <li class="d-flex">
+                                    <span>
+                                        <img src="images/icons/icons8-chevron-right-24.png" alt="arrow-icon" />
+                                    </span>
+                                    <span class="text"> quality of work</span>
+                                </li>
+                                <li class="d-flex">
+                                    <span>
+                                        <img src="images/icons/icons8-chevron-right-24.png" alt="arrow-icon" />
+                                    </span>
+                                    <span class="text">Fix it right the first time without wasting time</span>
+                                </li>
+                                <li class="d-flex">
+                                    <span>
+                                        <img src="images/icons/icons8-chevron-right-24.png" alt="arrow-icon" />
+                                    </span>
+                                    <span class="text">Constant contact with our customers so as to keep them informed about the progress of the vehicle reports</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="company">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-4 statement">
+                <div class="company-content">
+                    <div class="company-content-header d-flex">
+                        <div class="icon">
+                            <img src="images/icons/shared-vision.png" alt="Company Vision Icon">
+                        </div>
+                        <div class="company-content-header-title">
+                            <div class="h2-title pt-2 pb-2">
+                                <h4 class="title text-uppercase"><strong>our</strong> <span class="small-weight">vision</span></h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="company-content-body">
+                        <p>Most customers drive long distance to find the good services.</p>
+                        <p>Our vision as <strong class="text-italic">Diagtech Auto</strong> is to grow locally and
+                        eventually globally, so as to solve all our client's time, fuel expenditure for car services,
+                        by being closely in reach.</p>
+                        <p>Not only that, but we are highly interested in empowering the youth, in order to create
+                            great and qualified young technicians.
+                        </p>
+                        <p>We are aimve our clients' time which is usually consumed by waiting for authorizations</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4 statement">
+                <div class="company-content">
+                    <div class="company-content-header d-flex">
+                        <div class="icon">
+                            <img src="images/icons/achievement.png" alt="Company Mission Icon">
+                        </div>
+                        <div class="company-content-header-title">
+                            <div class="h2-title pt-2 pb-2">
+                                <h4 class="title text-uppercase"><strong>our</strong> <span class="small-weight">mission</span></h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="company-content-body">
+                        <p>We at <strong class="text-italic">Diagtech Auto</strong> are aiming to offer all our clients 
+                            with high quality auto repair services, fixing everything right the first time with an effective
+                            time at an affordable cost.
+                        </p>
+                        <p>Our most important aspect of business is to be trusted and be reliable at all times.</p>
+                        <p>is is our goal to have 100% customer satisfaction in regards to quality, friendliness,
+                            time to completion and to discover new ways to exceed the expectations of our customers.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4 statement">
+                <div class="company-content">
+                    <div class="company-content-header d-flex">
+                        <div class="icon">
+                            <img src="images/icons/think-out-of-the-box.png" alt="Business uniqeuness icon">
+                        </div>
+                        <div class="company-content-header-title">
+                            <div class="h2-title pt-2 pb-2">
+                                <h4 class="title text-uppercase"><strong>our business</strong></br> <span class="small-weight">is unique</span></h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="company-content-body">
+                        <p>Successful business are unique in their business model, what makes us unique is that we are more interested
+                            in helping our clients by educating them about the basics of their cars, in order for them to have an idea
+                            of the regular services and other components checks.
+                        </p>
+                        <p>Every service we do, we always do free computer diagnosis check and report to the client.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+</main>
+<div class="brands">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="h2-title text-center">
+                    <h4 class="title text-uppercase"><strong>Some of the brands</strong> <span class="small-weight">we specialize with:</span></h4>
+                    <div class="liner d-flex justify-content-center align-items-center">
+                        <div class="d-flex liner-inner align-items-center">
+                            <div class="line-left"></div>
+                            <div class="block">
+                                <div class="square"></div>
+                            </div>
+                            <div class="line-right"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="brands-slider d-flex">
+                    <div class="brands-arrow">
+                        <div class="arrow">
+                            <!--<img src="https://diagtechauto.co.za/images/icons/left-chevron.png" alt="">-->
+                        </div>
+                    </div>
+                    <div class="brands-center d-flex justify-content-evenly">
+                        <div class="item slide">
+                            <img src="images/clients/mercedes-benz-logo.png" alt="">
+                        </div>
+                        <div class="item slide">
+                            <img src="images/clients/volvo-logo.png" alt="">
+                        </div>
+                        <div class="item slide">
+                            <img src="images/clients/bmw-logo.png" alt="">
+                        </div>
+                    </div>
+                    <div class="brands-arrow">
+                        <div class="arrow">
+                            <!--<img src="https://diagtechauto.co.za/images/icons/chevron.png" alt="">-->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>    <footer>
+        <div class="main-footer pt-5 pb-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-3">
+                        <div class="contain-elems pe-5">
+                            <img src="images/logo/diagtech&#32;logo.png" alt="Diagtech Auto Logo" class="img-fluid logo-bottom">
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="contain-elems ps-5">
+                            <div class="title-footer">
+                                <p class="title-bottom">Quick Links</p>
+                            </div>
+                            <ul class="m-0 p-0 quick-links">
+                                <li>
+                                    <span class="icon-arrow">
+                                        <img src="images/icons/icons8-chevron-right-24.png" alt="">
+                                    </span>
+                                    <a href="index.html" class="link link-white" title="Home">Home</a>
+                                </li>
+                                <li>
+                                    <span class="icon-arrow">
+                                        <img src="images/icons/icons8-chevron-right-24.png" alt="">
+                                    </span>     
+                                    <a href="about.html" class="link link-white" title="About Us">About Us</a>
+                                </li>
+                                <li>
+                                    <span class="icon-arrow">
+                                        <img src="images/icons/icons8-chevron-right-24.png" alt="">
+                                    </span>            
+                                    <a href="services.html" class="link link-white" title="Services">Services</a>
+                                </li>
+                                <li>
+                                    <span class="icon-arrow">
+                                        <img src="images/icons/icons8-chevron-right-24.png" alt="">
+                                    </span>
+                                    <a href="contact.html" class="link link-white" title="Contact">Contact</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="contain-elems ps-3">
+                            <div class="title-footer">
+                                <p class="title-bottom">Social Links</p>
+                            </div>
+                            <ul class="m-0 p-0 pt-1 d-flex social-links">
+                                <li>
+                                    <a href="https://www.facebook.com/" title="Follow Us" class="link social-link-footer">
+                                        <i class="fab fa-facebook-f"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="about" title="Chat with us" class="link social-link-footer">
+                                        <i class="fab fa-whatsapp"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="mailto:info@diagtechauto.co.za" title="E-mail us" class="link social-link-footer">
+                                        <i class="fa fa-envelope"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="contain-elems">
+                            <div class="title-footer">
+                                <p class="title-bottom">Contact info</p>
+                            </div>
+                            <ul class="m-0 p-0 pt-1">
+                                <li class="d-flex">
+                                    <span class="icon-footer pe-2">
+                                        <i class="fa fa-home"></i>
+                                    </span>
+                                    <p class="address">Business park, unit, 6 Gravel Dr, Kya Sand, Randburg, 2163</p>
+                                </li>
+                                <li class="d-flex">
+                                    <span class="icon-footer pe-2">
+                                        <i class="fa fa-envelope"></i>
+                                    </span>
+                                    <p class="email">
+                                        <a href="mailto:info@diagtechauto.co.za" class="link address-link">info@digitechauto.co.za</a>
+                                    </p>
+                                </li>
+                                <li class="d-flex">
+                                    <span class="icon-footer pe-2">
+                                        <i class="fa fa-phone-square"></i>
+                                    </span>
+                                    <div class="contact">
+                                        <div class="contact-number">
+                                            <a href="tel:+27 61 450 6547" title="Call" class="link address-link">+27 61 450 6547</a>
+                                        </div>
+                                        <div class="contact-number">
+                                            <a href="tel:+27 66 205 3473" title="Call" class="link address-link">+27 66 205 3473</a>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bottom-footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="text-copyright">
+                            <p class="p-0 m-0 text-white">&copy; 2023 Diagtech Auto | All rights reserved.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="js/app.js"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBcAbHQyT5Exy5UQnWY-Jb0UzdhU7GLq74&callback=initMap"></script>
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 2,
+        spaceBetween: 30,
+        centeredSlides: true,
+        autoplay: {
+          delay: 2500,
+          disableOnInteraction: false,
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
+
+    </body>
+</html>
